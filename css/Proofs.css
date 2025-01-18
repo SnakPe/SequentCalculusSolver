@@ -1,0 +1,49 @@
+.Proof{
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+	justify-self: center;
+  
+}
+.Conclusion{
+  position: relative;
+}
+.Sequent{
+  border-top: 1px solid black;
+  padding: 0 5px 0 5px;
+}
+.Rule{
+  margin-left: 5px;
+  position: absolute;
+  top: -0.65em;
+  left: 100%;
+  white-space: nowrap;
+}
+.Ruletext{
+  border-bottom: 1px dotted black;
+}
+.RuleTooltip{
+  visibility: hidden;
+  
+  background-color: red;
+  padding: 5px;
+  border-radius: 10px;
+
+  /* Tooltip position */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.Rule:hover .RuleTooltip{
+  visibility: visible;
+  opacity: 1;
+}
+.Proof + .Proof{
+  margin-left: 100px;
+}

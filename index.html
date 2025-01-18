@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sequent Calculus Prover</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <link rel="stylesheet" type="text/css" href="css/Proofs.css" >
+        <script src="./build/bundle.js"></script>
+    </head>
+    <body>
+        <header>
+            <span>SCP - Propositional Logic</span>
+            
+        </header>
+        <main>
+            <div id="InputWrapper">
+                <label for="SequentInput"> Insert Sequent: </label>
+                <input name="SequentInput" id="SequentInput" placeholder="Enter your Sequent" value="-A, A&B, A|B, A->B  =>  A"/>
+                <button id="SequentInputButton">Prove</button>
+                <button id="ProofBorderDrawButton">Show Subtrees</button>
+            </div>
+            <div id="ProofRender"></div>
+        </main>
+        <footer id="HelpBar">
+            <span style="float: right;">
+                <button>How to <b>Use</b></button>
+                <button><b>What</b> is this</button>
+            </span>
+        </footer>
+    </body>
+</html>

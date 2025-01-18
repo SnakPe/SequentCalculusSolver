@@ -1,0 +1,62 @@
+/*Global*/
+:root{
+  --text-size: 1.5em;
+}
+html, button, input{
+	font-size: 20px; 
+	font-family:Arial, Helvetica, sans-serif;
+	height: 100%;
+	
+}
+
+
+/* Outer structure of webpage: footer, header and main area */
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+}
+header, footer{
+	margin: 0;
+	padding: 20px 10px;
+}
+header{
+	border-top: 10px solid rgb(47, 182, 245);
+	border-bottom: 2px solid gray;
+	margin-bottom: 5px;
+}
+footer{
+	background: linear-gradient(white, darkgray);
+}
+main{
+	margin: 10px;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*Main content*/
+#InputWrapper{
+	margin-bottom: 5px;
+	;
+}
+input{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+}
+#ProofRender{
+	overflow-x: scroll;
+  overflow-y: auto;
+
+	flex:1;
+	display: grid;
+	align-content: center;
+	/*align-items: center*/
+}
+::-webkit-scrollbar{
+	height: 0
+}
